@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+
+    <!-- TODO: Include Google Fonts file here -->
+
+    <link rel = "preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+        <button class="headerBtn" id="signUp" onclick="signUpFn()">Sign Up</button>
+        <button class="headerBtn" id="signIn" onclick="signInFn()">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore. Imagine. Create</p>
+
+        <form>
+            <div class="signInModel" >
+                <div class="modal-contentIn">
+                    <span class="inClose close">&times;</span>
+                    <p id="pHeading">Welcome Back!</p>
+                    <hr>
+                    
+                    <label for="usernameField" class="text">Username</label>
+                    <input type="text" id="usernameField" class="inputField" placeholder="Enter Username" required>
+                    
+                    <label for="passwordField" class="text">Password</label>
+                    <input type="password" id="passwordField" class="inputField" placeholder="Enter Password" required>
+                    
+                    <input type="submit" id="signInBtn" class="signBtn" value="Sign In">
+                    
+                    <div id="someText">
+                        <span id="notM">Not a member?</span> 
+                        <a href="#signUpp"><span id="blueText" >Sign Up</span></a>
+                    </div>
+                    
+                </div> 
+            </div>
+        </form>
+
+        <form>
+            <div class="signUpModel" id="signUpp" >
+                <div class="modal-contentUp">
+                    <span class="upClose close">&times;</span>
+                    <p id="pHeading">Get Started</p>
+                    <hr>
+                    
+                    <label for="nameField" class="text">Full Name</label>
+                    <input type="text" id="nameField" class="inputField" placeholder="Enter Full Name" required>
+                    
+                    <label for="usernameField" class="text">Username</label>
+                    <input type="text" id="usernameField" class="inputField" placeholder="Enter Username" required>
+                    
+                    <label for="passwordField" class="text">Password</label>
+                    <input type="password" id="passwordField" class="inputField" placeholder="Enter Password" required>
+                    
+                    <label for="confirmField" class="text">Confirm Password</label>
+                    <input type="password" id="confirmField" class="inputField" placeholder="Confirm Password" required>
+                    
+                    <input type="submit" id="signUpBtn" class="signBtn" value="Sign Up">
+                    
+                </div> 
+            </div>
+        </form>
+
+    </div> 
+
+    <div class="homePage">
+
+        <button class="mainBtn" id="allPosts" onclick="allPost()" >All Posts</button>
+        <button class="mainBtn" id="createPost" onclick="createFn()">Create Post</button>
+        
+        <form>
+            <div class="createPostModel" >
+                <div class="modal-contentPost">
+                    <span class="createClose">&times;</span>
+                    <p id="pHeading">Pen Your Post</p>  
+                    
+                    <label for="titleField" class="textt">Title:</label><br>
+                    <input type="text" id="titleField" class="titleField" required><br>
+
+                    <label for="textarea" class="textt">Content:</label><br>
+                    <textarea name="textarea" id="textarea" ></textarea>
+                    <div id="btnDiv">
+                        <input type="submit" id="createBtn" class="signBtnn" value="Create">
+                    </div>
+                    
+                </div> 
+            </div>
+        </form>
+
+    </div>
+
+</body>
+<script src="/js/header.js"></script>
+<script src="./js/index.js"></script>
+</html>

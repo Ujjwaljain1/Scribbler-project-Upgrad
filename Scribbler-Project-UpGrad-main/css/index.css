@@ -1,0 +1,126 @@
+body{
+    background: url('/images/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 ;
+    background-size: 100% cover ;
+    overflow:hidden;
+    display: block;
+} 
+
+.homePage{
+    /* display: flex; */
+    margin: 0;
+    position: fixed;
+    left: 45%;
+    top: 45%;
+}
+
+/* buttons */
+
+.mainBtn{
+    background-color: #f0c000;
+    color: black;
+    padding: 10px 10px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+/* models */
+
+.createPostModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-contentPost {
+    background-color: #fefefe;
+    margin: 25px auto; 
+    padding: 10px 60px 0 50px;
+    border: 1px solid #888;
+    width: 65%;
+    height: 90%;
+}
+
+.createClose {
+    color: rgb(129, 129, 129);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: -25px;
+}
+
+.createClose:hover,
+.createClose:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#pHeading{
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; 
+    margin: 12px 0 20px 0;
+}
+
+.titleField{
+    border : none;
+    background-color: #f1f0f0;
+    height: 40px;
+    width: 500px;
+    padding-left: 15px;
+    margin: 5px 0 40px 0;
+}
+
+.textt{
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+#textarea{
+    margin: 5px 10px 0 0;
+    width: 100%;
+    height: 59%;
+    border-width: 2px;
+    background-color: #f1f0f0;
+    border-color: #a7a7a7;;
+}
+
+.signBtnn{
+    display: inline-block;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    vertical-align:middle;
+    margin-top: 15px;
+    background-color: #5fb763;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    left: 45%;
+}
+
+#btnDiv{
+    display: flex;
+    justify-content: center;
+}
+
+.createClose{
+    margin-top: -10px;
+    margin-right: -45px;
+}

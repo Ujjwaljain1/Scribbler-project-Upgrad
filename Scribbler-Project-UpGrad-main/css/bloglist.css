@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+body{
+    background-color: orange;
+}
+
+/* header --------------------------------------------------------------- */
+
+.headerBtn{
+    /* display: inline-block; */
+    background-color: blue;
+    color: white;
+    float: right;
+    padding: 5px 5px;
+    margin: 5px 5px 3px 3px;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.logo-title{
+    font-family: "Satisfy", "cursive";
+    color: blue;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 50px;
+
+}
+.middleTextt{
+    font-family: "Marck Script",'Satisfy', 'cursive';   
+    font-size: 18px;
+    margin: 0 5px;
+    color: white;
+}
+
+/* models ------------------------------------*/
+.signInModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+#someText{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#notM{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#blueText{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signUpModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-contentIn {
+    background-color: #fefefe;
+    margin: 100px auto; 
+    padding: 10px 22px ;
+    border: 1px solid #888;
+    width: 360px;
+    height: 390px;
+}
+
+.modal-contentUp {
+    background-color: #fefefe;
+    margin: 100px auto; 
+    padding: 10px 22px ;
+    border: 1px solid #888;
+    width: 360px;
+    height: 520px;
+}
+
+#pHeading{
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; 
+    margin: 12px 0 20px 0;
+}
+
+.signBtn{
+    display: inline-block;
+    width: 358px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    vertical-align:middle;
+    margin-top: 25px;
+    background-color: #5fb763;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inputField{
+    border : none;
+    background-color: #f1f0f0;
+    height: 40px;
+    width: 342px;
+    padding-left: 15px;
+    margin: 5px 0 20px 0;
+}
+
+.text{
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0 5px 0;
+}
+
+/* close btn  ------------------------------------*/
+.close {
+    color: rgb(129, 129, 129);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin: -7px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* posts --------------------------------------------------------------------------------------- */
+.allPostsContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content:space-evenly;
+    /* margin-left: 40px; */
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.post{
+    display: flex;
+    margin: 0 15px 20px 15px;
+    background-color: #e9e8e9;
+    width: 40%;
+    height: 187px;
+    border-radius: 15px;
+}
+
+.divLeft {
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+    width: 20%;
+
+    /* max-width: 16%; */
+    /* background-color: white; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
+}
+
+.divLeft p{
+    display: flex;
+    border-top-left-radius: 15px ;
+    border-bottom-left-radius: 15px ;
+    height: 187px;
+    width: 16%;
+    max-width: 20%;
+    background-color: white;
+    vertical-align: middle; 
+    text-align: center;
+    display: table-cell;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.postName{
+    /* font-family: 'Itim', cursive; */
+    color: black;
+    height:max-content;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.postContent{
+    width: 100%;
+    background-color: #E8E8E8;
+    color: #000000;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.headerPart{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.postTitle {
+    margin-top: 10px;
+    font-family:'Itim', cursive;
+    font-weight: bolder;
+    color: #2b312b;
+    font-size: 22px;
+    height: 25px;
+}
+
+.trash {
+    font-size: 20px;
+    margin-left: 147px;
+    cursor: pointer;
+}
+
+.post-desc {
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 17px;
+    height: 63px;
+    overflow: hidden;
+    padding-right: 40px;
+}
+
+#menu {
+    font-size: 20px;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* delete model  */
+.deleteModel {
+    display: none ;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.DelmodalContent{
+    font-family: 'Itim', cursive;
+    background-color: #fefefe;
+    margin: 17% auto;
+    border: 1px solid #888;
+    width: 29%;
+    height: 150px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+#pText{
+    font-family: abel;
+    color:black;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+#yesBtn {
+    font-size: 15px;
+    font-family: 'Ubuntu Condensed';
+    background-color: #f4574a;
+    color: white;
+    border-color: transparent;
+    padding: 5px 10px;
+    width: 150px;
+    height: 50px;
+    right: 50px;
+    margin: 8px 40px 10px 0;
+    cursor: pointer;
+}
+
+#closeBtn {
+    font-size: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    background-color: #5fb763;
+    color: white;
+    border-color: transparent;
+    padding: 5px 10px;
+    width: 150px;
+    height: 50px;
+    right: 50px;
+    margin: 8px 0 10px 40px;
+    cursor: pointer;
+}
+

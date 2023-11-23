@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="stylesheet" href="/css/bloglist.css"> -->
+    <link rel="stylesheet" href="/css/post.css">
+    <script src="https://kit.fontawesome.com/ce4fdba713.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <button class="headerBtn" id="signUp" onclick="signUpFn()">Sign Up</button>
+        <button class="headerBtn" id="signIn" onclick="signInFn()">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleText">Explore. Imagine. Create</p>
+
+        <form>
+            <div class="signInModel" >
+                <div class="modal-contentIn">
+                    <span class="inClose close">&times;</span>
+                    <p id="pHeading">Welcome Back!</p>
+                    <hr>
+                    
+                    <label for="usernameField" class="text">Username</label>
+                    <input type="text" id="usernameField" class="inputField" placeholder="Enter Username" required>
+                    
+                    <label for="passwordField" class="text">Password</label>
+                    <input type="password" id="passwordField" class="inputField" placeholder="Enter Password" required>
+                    
+                    <input type="submit" id="signInBtn" class="signBtn" value="Sign In">
+                    
+                    <div id="someText">
+                        <span id="notM">Not a member?</span> <span id="blueText">Sign Up</span>
+                    </div>
+                    
+                </div> 
+            </div>
+        </form>
+
+        <form>
+            <div class="signUpModel" >
+                <div class="modal-contentUp">
+                    <span class="upClose close">&times;</span>
+                    <p id="pHeading">Get Started</p>
+                    <hr>
+                    
+                    <label for="nameField" class="text">Full Name</label>
+                    <input type="text" id="nameField" class="inputField" placeholder="Enter Full Name" required>
+                    
+                    <label for="usernameField" class="text">Username</label>
+                    <input type="text" id="usernameField" class="inputField" placeholder="Enter Username" required>
+                    
+                    <label for="passwordField" class="text">Password</label>
+                    <input type="password" id="passwordField" class="inputField" placeholder="Enter Password" required>
+                    
+                    <label for="confirmField" class="text">Confirm Password</label>
+                    <input type="password" id="confirmField" class="inputField" placeholder="Confirm Password" required>
+                    
+                    <input type="submit" id="signUpBtn" class="signBtn" value="Sign Up">
+                    
+                </div> 
+            </div>
+        </form>
+
+    </div>
+    <!-- Blog Post -->
+    
+        <div class="blogContent">
+            <div id="blogTitle" class="blogTitle">
+            <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+            <center><textarea id="titleArea" style="display: none; width: 247px;font-size: 16.5px"></textarea></center>
+            </div>
+        </div>
+        <div class="blogAuthor">
+
+            <!-- Insert code for Edit/Save button and  -->
+            <p>Jimi</p>
+            <a href=# id="edit" onclick="changeText()" ><div id="text"> Edit</div><div id="text2"><i class="fas fa-edit"></i></div></a>
+        </div>
+
+        <div class="blogText">
+            <p id="blogBody">
+                    Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
+            </p>
+            <textarea id="textarea" style="display: none"></textarea>
+        </div>
+
+
+        <div class="likeSection">
+            <button onclick="like()" id="likeBtn" class="likeBtn"><i class="fa fa-thumbs-up"></i>
+                <span id="liked">Like </span>
+            </button>
+            <p id="likeText">Be the first one to like this!</p>
+        </div>
+
+        <div class="commentSection">
+            <textarea name="commentBox" id="commentBox" placeholder="Leave a comment..."></textarea><br>  
+            <button onclick="comment()" class="commentBtn">Comment</button>
+            <p class="allComments">All Comments</p>
+            <div id="allComments"></div>
+        </div>
+        <p id="temp" style="display: none;"><i class="far fa-save"></i></p>
+		<p id="temp2" style="display: none;"><i class="fas fa-edit"></i></p>
+    
+    </div>
+
+</body>
+<script src="../js/post.js"></script>
+</html>

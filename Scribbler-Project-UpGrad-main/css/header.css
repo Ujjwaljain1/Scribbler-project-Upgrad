@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+/* header --------------------------------------------------------------- */
+.header{
+    height: 200px;
+}
+.headerBtn{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    float: right;
+    padding: 5px 5px;
+    margin: 5px 5px 3px 3px;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.logo-title{
+    font-family: "Satisfy", "cursive";
+    color: blue;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 50px;
+
+}
+.middleText{
+    font-family: "Marck Script",'Satisfy', 'cursive';   
+    font-size: 18px;
+    margin: 0 5px;
+    color: black;
+}
+
+/* models ------------------------------------*/
+.signInModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+#someText{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#notM{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#blueText{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signUpModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-contentIn {
+    background-color: #fefefe;
+    margin: 100px auto; 
+    padding: 10px 22px ;
+    border: 1px solid #888;
+    width: 360px;
+    height: 390px;
+}
+
+.modal-contentUp {
+    background-color: #fefefe;
+    margin: 100px auto; 
+    padding: 10px 22px ;
+    border: 1px solid #888;
+    width: 360px;
+    height: 520px;
+}
+
+#pHeading{
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; 
+    margin: 12px 0 20px 0;
+}
+
+.signBtn{
+    display: inline-block;
+    width: 358px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    vertical-align:middle;
+    margin-top: 25px;
+    background-color: #5fb763;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inputField{
+    border : none;
+    background-color: #f1f0f0;
+    height: 40px;
+    width: 342px;
+    padding-left: 15px;
+    margin: 5px 0 20px 0;
+}
+
+.text{
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0 5px 0;
+}
+
+/* close btn  ------------------------------------*/
+.close {
+    color: rgb(129, 129, 129);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin: -7px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+

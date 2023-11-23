@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body{
+    background-color: white;
+}
+.container {
+    margin: 8px auto;
+    width: 90%;
+	
+}
+
+.likeBtn{
+	margin-left: 70px;
+    border-radius: 4px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 7px 20px rgba(255, 0, 0, 0.4);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#likeText {
+	margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.commentBtn {
+	margin-left: 70px;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 7px 20px rgba(255, 0, 0, 0.4);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#commentBox {
+    width: 60%;
+    height: 80px;
+	margin-left: 70px;
+  /* min-height: 100px; */
+}
+
+
+.allComments {
+    font-weight: bold;
+    font-size: 18px;
+	margin-left: 70px;
+}
+
+
+#allComments {
+    background-color: lightgray;
+    padding: 20px 5px 3px 5px;
+	margin-left: 70px;
+}
+
+#allComments p {
+    background-color: white;
+    padding: 20px 10px;
+	margin-left: 70px;
+}
+
+
+  /* header  */
+
+.headerBtn{
+    /* display: inline-block; */
+    background-color: blue;
+    color: white;
+    float: right;
+    padding: 5px 5px;
+    margin: 5px 5px 3px 3px;
+    height: 40px;
+    width: 90px;
+    cursor: pointer;
+}
+
+.logo-title{
+    font-family: "Satisfy", "cursive";
+    color: blue;
+    margin-left: 5px;
+    font-weight: 500;
+    font-size: 50px;
+
+}
+.middleText{
+    font-family: "Marck Script",'Satisfy', 'cursive';   
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+/* models ------------------------------------*/
+.signInModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.commentBtn {
+    font-size: 15px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color: white;
+    box-shadow: 0px 7px 20px rgba(255, 0, 0, 0.4);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#someText{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#notM{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#blueText{
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signUpModel{
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-contentIn {
+    background-color: #fefefe;
+    margin: 100px auto; 
+    padding: 10px 22px ;
+    border: 1px solid #888;
+    width: 360px;
+    height: 390px;
+}
+
+.modal-contentUp {
+    background-color: #fefefe;
+    margin: 100px auto; 
+    padding: 10px 22px ;
+    border: 1px solid #888;
+    width: 360px;
+    height: 520px;
+}
+
+#pHeading{
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center; 
+    margin: 12px 0 20px 0;
+}
+
+.signBtn{
+    display: inline-block;
+    width: 358px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    vertical-align:middle;
+    margin-top: 25px;
+    background-color: #5fb763;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.inputField{
+    border : none;
+    background-color: #f1f0f0;
+    height: 40px;
+    width: 342px;
+    padding-left: 15px;
+    margin: 5px 0 20px 0;
+}
+
+.text{
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0 5px 0;
+}
+
+/* close btn  ------------------------------------*/
+.close {
+    color: rgb(129, 129, 129);
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    margin: -7px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ----------------------------------------------------------------------- */
+.blogTitle {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+	
+}
+.blogText {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left: 70px;
+	margin-right: 70px;
+	
+}
+.blogAuthor {
+	margin-left: 70px;
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+    display: flex;
+	justify-content: space-between;
+}
+
+#edit{
+	margin-right: 70px;
+	display: flex;
+	justify-content: space-around;
+	text-decoration: none;
+	color: white;
+	font-family: serif;
+	font-size: 19px;
+	border: 1px solid pink;
+    width: 80px;
+    height: 30px;
+	background-color: red;
+	text-align: center;
+	padding-top: 6px;
+	box-shadow: 0px 7px 20px rgba(255, 0, 0, 0.4);	
+}
+
+

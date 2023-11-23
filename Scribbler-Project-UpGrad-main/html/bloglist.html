@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> -->
+
+    <link rel="stylesheet" href="/css/bloglist.css">
+
+    <!-- TODO: Include Font Awesome file here -->
+    <script src="https://kit.fontawesome.com/ce4fdba713.js" crossorigin="anonymous"></script>
+
+    <!-- TODO: Include Google Fonts file here -->
+    <link rel = "preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TODO: Include code for header here -->
+
+    <div class="header">
+        <button class="headerBtn" id="signUp" onclick="signUpFn()">Sign Up</button>
+        <button class="headerBtn" id="signIn" onclick="signInFn()">Sign In</button>
+        <a class="logo-title">ScriBBler</a>
+        <p class="middleTextt">Explore. Imagine. Create</p>
+
+        <form>
+            <div class="signInModel" >
+                <div class="modal-contentIn">
+                    <span class="inClose close">&times;</span>
+                    <p id="pHeading">Welcome Back!</p>
+                    <hr>
+                    
+                    <label for="usernameField" class="text">Username</label>
+                    <input type="text" id="usernameField" class="inputField" placeholder="Enter Username" required>
+                    
+                    <label for="passwordField" class="text">Password</label>
+                    <input type="password" id="passwordField" class="inputField" placeholder="Enter Password" required>
+                    
+                    <input type="submit" id="signInBtn" class="signBtn" value="Sign In">
+                    
+                    <div id="someText">
+                        <span id="notM">Not a member?</span> <span id="blueText">Sign Up</spa>
+                    </div>
+                    
+                </div> 
+            </div>
+        </form>
+
+        <form>
+            <div class="signUpModel" >
+                <div class="modal-contentUp">
+                    <span class="upClose close">&times;</span>
+                    <p id="pHeading">Get Started</p>
+                    <hr>
+                    
+                    <label for="nameField" class="text">Full Name</label>
+                    <input type="text" id="nameField" class="inputField" placeholder="Enter Full Name" required>
+                    
+                    <label for="usernameField" class="text">Username</label>
+                    <input type="text" id="usernameField" class="inputField" placeholder="Enter Username" required>
+                    
+                    <label for="passwordField" class="text">Password</label>
+                    <input type="password" id="passwordField" class="inputField" placeholder="Enter Password" required>
+                    
+                    <label for="confirmField" class="text">Confirm Password</label>
+                    <input type="password" id="confirmField" class="inputField" placeholder="Confirm Password" required>
+                    
+                    <input type="submit" id="signUpBtn" class="signBtn" value="Sign Up">
+                    
+                </div> 
+            </div>
+        </form>
+
+    </div>
+
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+    <!-- list of all posts starts here -->
+
+    <div class="allPostsContainer">
+
+        <!-- post 1 starts here -->
+            
+        <div class="post">
+                
+            <div class="divLeft">
+                <p class="postName">Srishti Gupta</p>
+            </div>
+
+            <div class="postContent">
+                <div class="headerPart">
+                    <p class="postTitle" id="postTitle1">Hello there ! This is Post 1.</p>
+                    <span class="trash" 
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+
+                <p class="post-desc">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+
+                <!-- Insert code for ... icon here -->
+                <span class="menuIcon">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html"><i class="fa-solid fa-ellipsis" id="menu"></i></a>
+                </span>
+                    
+            </div>
+
+        </div>
+
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+            
+        <div class="post">
+                
+            <div class="divLeft">
+                <p class="postName">Colby Fayock</p>
+            </div>
+
+            <div class="postContent">
+                <div class="headerPart">
+                    <p class="postTitle">Hello there ! This is Post 2.</p>
+                    <span class="trash" id="trashh">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+
+                <p class="post-desc">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+
+                <span class="menuIcon">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html"><i class="fa-solid fa-ellipsis" id="menu"></i></a>
+                </span>
+                    
+            </div>
+
+        </div>
+        
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+            
+        <div class="post">
+                
+            <div class="divLeft">
+                <p class="postName">Yazeed Bzadough</p>
+            </div>
+
+            <div class="postContent">
+                <div class="headerPart">
+                    <p class="postTitle">Hello there ! This is Post 3.</p>
+                    <span class="trash" id="trashh">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+
+                <p class="post-desc">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+
+                <span class="menuIcon">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html"><i class="fa-solid fa-ellipsis" id="menu"></i></a>
+                </span>
+                    
+            </div>
+
+        </div>
+        
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+            
+        <div class="post">
+                
+            <div class="divLeft">
+                <p class="postName">Cedd Burge</p>
+            </div>
+
+            <div class="postContent">
+                <div class="headerPart">
+                    <p class="postTitle">Hello there ! This is Post 4.</p>
+                    <span class="trash" id="trashh">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+
+                <p class="post-desc">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which leads to confusion when discussing the code.</p>
+
+                <span class="menuIcon">
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html"><i class="fa-solid fa-ellipsis" id="menu"></i></a>
+                </span>
+                    
+            </div>
+
+        </div>
+        
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+            
+        <div class="post">
+                
+            <div class="divLeft">
+                <p class="postName">Srishti Gupta</p>
+            </div>
+
+            <div class="postContent">
+                <div class="headerPart">
+                    <p class="postTitle">Hello there ! This is Post 5.</p>
+                    <span class="trash" id="trashh">
+                        <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa-solid fa-trash-can"></i>
+                    </span>
+                </div>
+
+                <p class="post-desc">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz.</p>
+
+                <span>
+                    <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <a href="./post.html"><i class="fa-solid fa-ellipsis" id="menu"></i></a>
+                </span>
+                
+            </div>
+
+        </div>
+        
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+
+        <div class="deleteModel" >
+            <div class="DelmodalContent">
+                <p id="pText">Are you sure you want to delete this post?</p>    
+                <button id="yesBtn">Yes</button>
+                <button id="closeBtn">No</button>
+            </div> 
+        </div>  
+
+    </div>
+
+    <!-- list of all posts ends here -->
+</body>
+<script src="../js/bloglist.js"></script>
+
+</html>
